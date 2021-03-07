@@ -11,9 +11,9 @@ module.exports = class stallmanCopypasta extends Plugin {
                 if (message[0] == "-s") {
                     message.shift();
                     send = true;
-                    if (message[0] != undefined) default_word = message[0];
+                    if (message[0] != undefined) default_word = message.join(' ');
                 } else {
-                    if (message[0] != undefined) default_word = message[0];
+                    if (message[0] != undefined) default_word = message.join(' ');
                 }
 
                 let copypasta = `I'd just like to interject for a moment. What you're refering to as ${default_word}, is in fact, GNU/${default_word}, or as I've recently taken to calling it, GNU plus ${default_word}. ${default_word} is not an operating system unto itself, but rather another free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities and vital system components comprising a full OS as defined by POSIX.\n
