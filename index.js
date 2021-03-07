@@ -1,7 +1,7 @@
-const { Plugin } = require('powercord/entities');
+const { Plugin } = require('@vizality/entities');
 module.exports = class stallmanCopypasta extends Plugin {
-    startPlugin() {
-        powercord.api.commands.registerCommand({
+    start() {
+        vizality.api.commands.registerCommand({
             command: 'stallman',
             description: 'Prints the stallman copypasta to current channel.',
             usage: '{c} [-s] <Replacement for Linux>',
@@ -26,7 +26,7 @@ There really is a ${default_word}, and these people are using it, but it is just
             }
         });
     }
-    pluginWillUnload() {
-        powercord.api.commands.unregisterCommand('stallman');
+    stop() {
+        vizality.api.commands.unregisterCommand('stallman');
     }
 };

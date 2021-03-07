@@ -1,7 +1,10 @@
 {
-    "name": "Stallman copypasta maker",
+    "name": "Stallman Copypasta",
     "version": "1.0.0",
-    "description": "Lets you send the stallman copypasta with with customn variable in place of Linux",
-    "author": "z",
-    "license": "MIT"
+    "description": "Lets you send the Stallman copypasta with a custom word in place of Linux.",
+    "author": {
+        "name": "rem#3980 | Original author: \"z ឵឵឵#8128\"",
+        "id": "257109471589957632"
+      },
+    "license": "None"
 }
